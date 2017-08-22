@@ -1,0 +1,19 @@
+alert tcp any any -> any 80 (msg:"gilgil rule"; content:"GET /"; content:"Host: www.gilgil.net"; sid:10001; rev:1;)
+
+alert tcp any any -> any 80 (msg:"naver rule"; content:"GET /"; content:"Host: www.naver.com"; sid:10002; rev:1;)
+
+alert tcp any any -> any 80 (msg:"naver rule"; content:"GET /"; content:"Host: naver.com"; sid:10003; rev:1;)
+
+alert tcp any any -> any 80 (msg:"snoopspy rule"; content:"GET /download HTTP"; content:"Host: snoopspy.com"; sid:10004; rev:1;)
+
+alert tcp any any -> any 80 (msg:"daum rule"; content:"GET /"; content:"Host: daum.net"; sid:10005; rev:1;)
+
+alert tcp any any -> any 80 (msg:"[*]uriminzokkiri rule"; content:"GET /"; content:"Host: www.uriminzokkiri.com"; sid:10006; rev:1;)
+
+alert tcp any any -> any 80 (msg:"[*]ilbe rule"; content:"GET /"; content:"Host: www.ilbe.com"; sid:10007; rev:1;)
+
+alert tcp any any -> any 80 (msg:"[*]avnana rule"; content:"GET /"; content:"Host: avnana.com"; sid:10008; rev:1;)
+
+alert tcp any any -> any 80 (msg:"[*]sedisk rule"; content:"GET /"; content:"Host: sedisk.com"; sid:10009; rev:1;)
+
+alert tcp any any -> any 80 (msg:"test gilgil mp4 download rule"; content:"GET /streaming/test.mp4"; content:"Host: test.gilgil.net"; sid:10010; rev:1;)
